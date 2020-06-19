@@ -4,7 +4,6 @@ import android.os.Bundle;
 import android.view.WindowManager;
 import android.widget.Toast;
 
-import com.example.daegawoncsversion.R;
 import com.sanbot.opensdk.base.BindBaseActivity;
 import com.sanbot.opensdk.beans.FuncConstant;
 import com.sanbot.opensdk.function.beans.handmotion.NoAngleHandMotion;
@@ -28,7 +27,6 @@ public class BaseActivity extends BindBaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         register(PopupActivity.class);
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_popup);
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 
         systemManager = (SystemManager)getUnitManager(FuncConstant. SYSTEM_MANAGER);

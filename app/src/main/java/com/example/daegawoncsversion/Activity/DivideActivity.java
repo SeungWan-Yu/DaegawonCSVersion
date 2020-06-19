@@ -283,7 +283,7 @@ public class DivideActivity extends BaseActivity {
 
         public void onFinish() {
             recyclerViewState = recyclerView.getLayoutManager().onSaveInstanceState();
-//            retrofitdb();
+            retrofitdb();
             countCDT.start();
         }
     };
