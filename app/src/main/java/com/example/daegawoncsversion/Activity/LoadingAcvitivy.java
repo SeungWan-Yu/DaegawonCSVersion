@@ -8,7 +8,6 @@ import android.view.MotionEvent;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
-import com.bumptech.glide.request.target.GlideDrawableImageViewTarget;
 import com.example.daegawoncsversion.Interface.RetrofitInterface;
 import com.example.daegawoncsversion.Models.CountModels;
 import com.example.daegawoncsversion.Object.Keyobject;
@@ -42,8 +41,7 @@ public class LoadingAcvitivy extends BaseActivity {
         setContentView(R.layout.activity_loading);
 
         ImageView loading = findViewById(R.id.loading);
-        GlideDrawableImageViewTarget gifImage = new GlideDrawableImageViewTarget(loading);
-        Glide.with(this).load(R.drawable.loding).into(gifImage);
+        Glide.with(this).load(R.drawable.loading).into(loading);
 
         intent11 = new Intent(LoadingAcvitivy.this, InfoActivity.class);
         hd = new Handler();
