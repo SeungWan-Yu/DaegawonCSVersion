@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout
+    xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:tools = "http://schemas.android.com/tools"
+    android:layout_width = "match_parent"
+    android:layout_height = "match_parent"
+    android:background = "#FFEC00"
+    android:orientation = "vertical"
+    tools:context = ".Activity.AdminDivideActivity">
+
+    <LinearLayout
+        android:id="@+id/mly1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFD600"
+        android:weightSum="10">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:background="#FFEC00"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#FFD600"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/mlogbt"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="140dp"
+                    android:layout_height="80dp"
+                    android:background="?android:attr/selectableItemBackgroundBorderless"
+                    android:text="@string/text_logout"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:theme="@style/AppTheme.whiteRipple"
+                    tools:ignore="HardcodedText,NewApi" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:orientation="horizontal" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/wait_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?android:attr/selectableItemBackgroundBorderless"
+                    android:text="@string/text_wait_list"
+                    android:textColor="#000000"
+                    android:textSize="36sp"
+                    android:theme="@style/AppTheme.whiteRipple"
+                    tools:ignore="NewApi" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FFD600"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/create"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?android:attr/selectableItemBackgroundBorderless"
+                    android:text="@string/text_create"
+                    android:textColor="#000000"
+                    android:textSize="36sp"
+                    android:theme="@style/AppTheme.whiteRipple"
+                    tools:ignore="NewApi" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

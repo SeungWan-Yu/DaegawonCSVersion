@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.daegawoncsversion">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <activity android:name="com.example.daegawoncsversion.Activity.MainActivity">
+            <meta-data
+                android:name="CONFIG_RECORD"
+                android:value="true" />
+            <meta-data
+                android:name="FORBID_PIR"
+                android:value="true" />
+            <meta-data
+                android:name="RECOGNIZE_MODE"
+                android:value="1" />
+        </activity>
+        <activity android:name="com.example.daegawoncsversion.Activity.AdminActivity" />
+        <activity android:name="com.example.daegawoncsversion.Activity.AdminDivideActivity" />
+        <activity
+            android:name="com.example.daegawoncsversion.Activity.AdminPopupActivity"
+            android:theme="@style/PopupTheme" />
+        <activity
+            android:name="com.example.daegawoncsversion.Activity.ReserveChActivity" />
+        <activity
+            android:name="com.example.daegawoncsversion.Activity.ReserveSchActivity" />
+        <activity android:name="com.example.daegawoncsversion.Activity.BaseActivity" />
+        <activity android:name="com.example.daegawoncsversion.Activity.DivideActivity" />
+        <activity android:name="com.example.daegawoncsversion.Activity.AdminPopupChActivity"
+            android:theme="@style/PopupTheme" />
+        <activity
+            android:name="com.example.daegawoncsversion.Activity.InfoActivity"
+            android:theme="@style/PopupTheme" />
+        <activity
+            android:name="com.example.daegawoncsversion.Activity.CheckDivideActivity"
+            android:theme="@style/PopupTheme" />
+        <activity android:name="com.example.daegawoncsversion.Activity.SeatChoiceActivity"
+            android:theme="@style/PopupTheme">
+        </activity>
+        <activity
+            android:name="com.example.daegawoncsversion.Activity.LoadingAcvitivy"
+            android:theme="@style/PopupTheme" />
+        <activity android:name="com.example.daegawoncsversion.Activity.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.daegawoncsversion.Activity.PopupActivity"
+            android:theme="@style/PopupTheme" />
+        <activity
+            android:name="com.example.daegawoncsversion.Activity.SeatActivity"
+            android:theme="@style/PopupTheme" />
+        <activity
+            android:name="com.example.daegawoncsversion.Activity.SeatActivity11"
+            android:theme="@style/PopupTheme" />
+    </application>
+
+</manifest>
